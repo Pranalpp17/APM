@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Adjust container width as needed */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    margin-right: 10px;
+    flex: 1; /* Ensure input and select take full width minus margin and button */
+}
+
+.input-group input {
+    width: calc(100% - 20px); /* Adjust to fit the container, considering margins and padding */
+    padding: 8px; /* Add padding for better appearance */
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.input-group select {
+    width: calc(100% - 20px); /* Same adjustment for select */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.add-btn, .del-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.del-btn {
+    background-color: #dc3545;
+}
+
+.add-btn:hover, .del-btn:hover, gen-btn:hover {
+    opacity: 0.8;
+}
+
+.gen-btn {
+    display: block;
+    margin: auto;
+    background-color: #00A36C;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

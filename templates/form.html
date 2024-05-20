@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Form</h1>
+        <form method="GET" action="{{ url_for('results') }}">
+            <div id="input-container">
+                <div class="input-group" id="initial-input-group">
+                    <input type="text" name="input_1" placeholder="Enter value">
+                    <button type="button" class="add-btn">Add</button>
+                    <button type="button" class="del-btn">Delete</button>
+                </div>
+            </div>
+            <button type="submit" class="gen-btn">Generate</button>
+
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
